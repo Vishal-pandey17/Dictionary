@@ -26,10 +26,12 @@ function App() {
        <h1>Dictionary App</h1>
        <form onSubmit={calldata}>
             <input 
-           placeholder="Search for a word..."
-           required
-           onChange={(e) => setText(e.target.value)}
-         />
+              placeholder="Search for a word..."
+              required
+              onChange={(e) => setText(e.target.value)}
+              type="text"
+              value={text}
+             />
          <button type="submit">Submit</button>
        </form>
        <h3>Definition:</h3>
