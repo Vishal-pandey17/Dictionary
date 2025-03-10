@@ -35,7 +35,8 @@ function App() {
          <button type="submit">Submit</button>
        </form>
        <h3>Definition:</h3>
-       <p>{defination}</p>
+       {defination && <p>{defination}</p>}
+       
     </div>
   );
 }
